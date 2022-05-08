@@ -1,0 +1,67 @@
+nhập  java . sử dụng . Máy quét ;
+
+ sinh viên lớp  công khai {
+    được bảo vệ  int  studentCode , n ;
+     Tên chuỗi  được bảo vệ ;
+     Chủ thể được bảo vệ [] chủ thể ;
+
+    Máy quét  sc = Máy quét mới  ( Hệ thống . In );
+
+     sinh viên công cộng () {}
+
+    public  Student ( int  studentCode , String  name , int  n ) {
+        cái này . studentCode = studentCode ;
+        cái này . name = tên ;
+        cái này . n = n ;
+        chủ đề = new  Chủ đề [ n ];
+    }
+
+    public  int  getStudentCode () {
+        trả lại  cái này . Mã số sinh viên ;
+    }
+
+    public  void  setStudentCode ( int  studentCode ) {
+        cái này . studentCode = studentCode ;
+    }
+
+    public  int  getN () {
+        trả lại  cái này . n ;
+    }
+
+    public  void  setN ( int  n ) {
+        cái này . n = n ;
+    }
+
+    public  String  getName () {
+        trả lại  cái này . tên gọi ;
+    }
+
+    public  void  setName ( String  name ) {
+        cái này . name = tên ;
+    }
+
+    public  Subject [] getSubject () {
+        trả lại  cái này . môn học ;
+    }
+
+    public  void  setSubject () {
+        for ( int  i = 0 ; i < this . n ; i ++) {
+            Hệ thống . ra ngoài . print ( "Ma Mon Hoc:" );
+            int  ma = sc . nextInt ();
+            Hệ thống . ra ngoài . print ( "Ten Mon Hoc:" );
+            Chuỗi  tenMonHoc = sc . nextLine ();
+            tenMonHoc = sc . nextLine ();
+            Hệ thống . ra ngoài . print ( "Diem Giua Ki:" );
+            double  diemGiuaKi = sc . nextDouble ();
+            Hệ thống . ra ngoài . print ( "Diem Cuoi Ki:" );
+            double  diemCuoiKi = sc . nextDouble ();
+            cái này . subject [ i ] = new  Subject ( ma , tenMonHoc , diemGiuaKi , diemCuoiKi );
+        }
+    }
+
+    public  static  void  main ( String [] args ) {
+        Student [] st1 = new  Student [ 10 ];
+        
+    }
+
+}
